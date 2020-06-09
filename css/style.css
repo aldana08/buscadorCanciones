@@ -1,0 +1,131 @@
+html{
+    min-height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);        
+    font-family: 'Oswald', sans-serif;
+    min-height: 100%;
+}
+
+.titulo {
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.contenido {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);    
+    max-width: 1100px;
+    margin:  0 auto;
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.formulario-busqueda p {
+    text-align: center;
+}
+.formulario-busqueda span {
+    color: red;
+}
+
+form{
+    width: 100%;
+}
+.input {
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.input label {
+    text-align: right;
+    margin-right: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.input span {
+    color: red;
+}
+.input input[type="text"] {
+    height: 2.5rem;
+    padding: 1rem;
+}
+.enviar {
+    text-align: right;
+    justify-content: flex-end!important;
+}
+.input input[type="submit"]{
+    background-color: #6f86d6;
+    padding: .5rem 2rem;
+    color: white;
+    align-self: flex-end;
+    border:none;
+    transition: background-color .3s ease-in-out;
+} 
+.input input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #384e9d;
+}
+
+.boton{
+    margin: 0 auto 30px;
+    width: 100%;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+}
+
+.error {
+    padding: 1rem;
+    border: 1px solid red;
+    background-color: rgb(249, 121, 121);
+    color: white;
+}
+
+
+#resultado {
+    white-space: pre-wrap;
+    padding: 2rem;
+}
+
+@media (min-width:768px) {
+    .input label {
+        flex: 0;
+        width: 100%;
+        text-align: left;
+    }
+    .contenido{
+        margin: 20px auto;
+    }
+    
+}
+
+@media (max-width:480px) {
+    .input label {
+        width: 100%;
+        text-align: left;
+    }
+    .contenido{
+        margin: 10px;
+    }
+    
+}
